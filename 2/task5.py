@@ -1,10 +1,10 @@
 def unique_words(s):
     response = []
-    lst = s.split(' ')
+    lst = s.split(' ')  # Спилит по умолчанию использует пробел lst = s.split()
 
     for i in lst:
         if i not in response:
-            if i[-1] == ',' or i[-1] == '.' or i[-1] == '?':
+            if i[-1] == ',' or i[-1] == '.' or i[-1] == '?': # Хорошо, что проверяете именно последний символ, так вы не удалите из центра слова, но пропустите троеточие ...
                 i = i[:-1]
             response.append(i)
     return response

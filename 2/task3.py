@@ -3,4 +3,4 @@ def is_pythagorean_triple(x,y,z):
 
 assert is_pythagorean_triple(3, 4, 5) == True
 assert is_pythagorean_triple(5, 12, 13) == True
-assert is_pythagorean_triple(7, 8, 9) == False
+assert is_pythagorean_triple(7, 8, 9) == False  
